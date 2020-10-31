@@ -5,7 +5,7 @@ function hasProfile() {
 }
 
 function saveProfile() {
-    for (field of $$('#form-profile input:not([disabled]):not([type=checkbox])')) {
+    for (field of $$('#form-profile input:not([disabled]):not([type=checkbox]):not([type=date]):not([type=time])')) {
         localStorage.setItem(field.id.substring('field-'.length), field.value)
     }
 }
