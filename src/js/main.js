@@ -12,4 +12,3 @@ import { createForm } from './form'
 warnFacebookBrowserUserIfNecessary()
 createForm()
 prepareForm()
-addVersion(process.env.VERSION)
